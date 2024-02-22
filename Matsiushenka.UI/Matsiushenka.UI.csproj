@@ -8,6 +8,27 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="images\**" />
+    <Compile Remove="Новая папка1\**" />
+    <Compile Remove="Новая папка\**" />
+    <Content Remove="images\**" />
+    <Content Remove="Новая папка1\**" />
+    <Content Remove="Новая папка\**" />
+    <EmbeddedResource Remove="images\**" />
+    <EmbeddedResource Remove="Новая папка1\**" />
+    <EmbeddedResource Remove="Новая папка\**" />
+    <None Remove="images\**" />
+    <None Remove="Новая папка1\**" />
+    <None Remove="Новая папка\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\images\FB.jpg" />
+    <None Include="wwwroot\images\TW.jpg" />
+    <None Include="wwwroot\images\WK.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="8.0.2" />
     <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="8.0.2" />
     <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="8.0.2" />
